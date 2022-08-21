@@ -1,6 +1,5 @@
 import "./index.scss";
 import { Link } from "react-router-dom";
-import Temp from "../../assets/images/Solid_gray.png";
 
 const Projection = () => {
     return (
