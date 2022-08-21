@@ -3,9 +3,6 @@ import Loader from 'react-loaders';
 import { useState, useEffect } from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import OneLife from "../../assets/images/onelife.png"
-import { Link } from 'react-router-dom';
-import Temp from "../../assets/images/Solid_gray.png";
-import {animateScroll as scroll} from "react-scroll";
 import Projection from "../../assets/images/projection.png"
 import Wordle from "../../assets/images/wordle.png"
 

@@ -1,5 +1,4 @@
 import "./index.scss";
-import Loader from "react-loaders";
 import { Link } from "react-router-dom";
 import Temp from "../../assets/images/Solid_gray.png";
 
