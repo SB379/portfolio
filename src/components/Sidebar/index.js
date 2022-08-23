@@ -1,9 +1,9 @@
 import "./index.scss"
 import { Link, NavLink } from "react-router-dom"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import { faEnvelope, faHome, faS, faUser } from "@fortawesome/free-solid-svg-icons"
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons"
-import { faCode } from "@fortawesome/free-solid-svg-icons" 
+import { faEnvelope, faHome, faS, faUser, faCode } from "@fortawesome/free-solid-svg-icons"
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons"
+
 
 const Sidebar = () => (
     <div className = 'nav-bar'>
@@ -56,6 +56,15 @@ const Sidebar = () => (
 
                 >
                     <FontAwesomeIcon icon = {faLinkedin} color = '#4d4d4e'/>
+                </a>
+            </li>
+            <li>
+                <a
+                    target = "_blank"
+                    rel = "noreferrer"
+                    href = "https://github.com/SB379"
+                >
+                    <FontAwesomeIcon icon = {faGithubSquare} color = "#4d4d4e"/>
                 </a>
             </li>
         </ul>
