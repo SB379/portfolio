@@ -25,9 +25,6 @@ const Contact = () => {
                             letterClass = {letterClass}
                         />
                     </h1>
-                    <p>
-                        Paragraph goes here
-                    </p>
 
                     <div className = 'contact-form'>
                         <form>
