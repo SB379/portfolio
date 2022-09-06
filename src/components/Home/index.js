@@ -4,6 +4,7 @@ import {useState} from 'react';
 import AnimatedLetters from '../AnimatedLetters';
 import Loader from 'react-loaders';
 import { useEffect } from 'react';
+import Headshot from "../../assets/images/headshot.jpg";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
@@ -36,7 +37,10 @@ const Home = () => {
                     <br/>
                 </h1>
                 <h2>Full-Stack Developer / Entrepreneur / Content Creator </h2>
-                <Link to = "/contact" className= 'flat-button'>Contact Me</Link>
+                <Link to = "/contact" className = 'flat-button'>Contact Me</Link>
+            </div>
+            <div className = "image-zone">
+                <img src = {Headshot} alt = "Headshot"/>
             </div>
         </div>
 

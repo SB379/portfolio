@@ -1,4 +1,10 @@
 .home-page{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
     .text-zone {
         position: absolute;
         left: 15%;
@@ -7,41 +13,53 @@
         width: 50%;
         min-width: 50%;
         max-height: 90%;
+
+
+        h1 {
+            color: #22223B;
+            font-size: 96px !important;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+        }
+    
+        h2 {
+            color: #4A4E69;
+            padding-bottom: 25px;
+            font-family: sans-serif;
+            letter-spacing: 3px;
+            animation: fadeIn 1s 1.8s backwards;
+        }
+    
+
+        .flat-button {
+            width: 100%;
+            color: #F2E9E4;
+            background-color: #22223B;
+            font-family: 'Coolvetica';
+            font-size: 28px;
+            border-radius: 25px;
+            padding: 15px;
+            text-decoration: none;
+            letter-spacing: 4px;
+            animation: fadeIn 1s 1.8s backwards;
+            box-shadow: 'none';
+    
+            &:hover{
+                background: #F2E9E4;
+                color: #22223B;
+                box-shadow: "none";
+            }
+        }
     }
     
-    h1 {
-        color: #2b6777;
-        font-size: 96px !important;
-        margin: 0;
-        font-family: 'Coolvetica';
-        font-weight: 400;
-    }
 
-    h2 {
-        color: #4d4d4e;
-        padding-bottom: 25px;
-        font-family: sans-serif;
-        letter-spacing: 3px;
-        animation: fadeIn 1s 1.8s backwards;
-    }
+    .image-zone {
 
-    .flat-button {
-        width: 100%;
-        color: #f2f2f2;
-        background-color: #2b6777;
-        font-family: 'Coolvetica';
-        font-size: 28px;
-        border-radius: 25px;
-        padding: 15px;
-        text-decoration: none;
-        letter-spacing: 4px;
-        animation: fadeIn 1s 1.8s backwards;
-        box-shadow: 'none';
+        padding-right: 125px;
 
-        &:hover{
-            background: #f2f2f2;
-            color: #2b6777;
-            box-shadow: "none";
+        img {
+            width: 100%;
         }
     }
 }
