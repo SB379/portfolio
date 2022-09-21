@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCss3, faHtml5, faJava, faJsSquare, faPython, faReact } from '@fortawesome/free-brands-svg-icons';
 import Loader from 'react-loaders';
+import { Chrono } from 'react-chrono';
 
 const About = () => {
-
 
     const [letterClass, setLetterClass] = useState('text-animate')
 
@@ -15,10 +15,38 @@ const About = () => {
             setLetterClass('text-animate-hover')
         }, 3000)
     })
+
+    const items = [{
+        title: "2011",
+        cardTitle: "5th Grade, Upper Elementary School",
+        cardSubtitle: "First Exposure to the World of CS",
+        cardDetailedText: "Okay so I need to write a fucking paragraph",
+    },
+    {
+        title: "2016",
+        cardTitle: "8th Grade, Middle School",
+        cardSubtitle: "Getting more accustomed to Coding"
+    },
+    {
+        title: "2017",
+        cardTitle: "9th Grade, High School",
+        cardSubtitle: "Began taking CS classes to learn the ropes",
+    },
+    {
+        title: "2019",
+        cardTitle: "11th Grade, High School",
+        cardSubtitle: "AP CS A", 
+    },
+    {
+        title: "2020",
+        cardTitle: "Senior Year Summer, Stanford Summer Session",
+        cardSubtitle: "Some Hard Ass Classes",
+    },
+    ]
     
     return (
         <>
-        <div className = 'container about-page'>
+        {/* <div className = 'container about-page'>
             <div className = 'text-zone'>
                 <h1>
                     <AnimatedLetters
@@ -62,8 +90,41 @@ const About = () => {
                     </div>
                 </div>
             </div>
-        </div>
-        <Loader type = 'pacman'/>
+        </div> */}
+            <div className='container about-page'>
+                <h1>
+                    <AnimatedLetters
+                        strArray={['A','b', 'o', 'u', 't', ' ', 'M', 'e']}
+                        idx = {15}
+                        letterClass = {letterClass}
+                    />
+                </h1>
+
+                <div className = 'time-line'>
+                    <Chrono 
+                        mode = "VERTICAL" 
+                        items = {items}
+                        useReadMore = {true}
+                        cardWidth={500}
+                        fontSizes={{
+                            cardSubtitle: '1.5rem',
+                            cardText: '1.5rem',
+                            cardTitle: '2.5rem',
+                            title: '2rem',
+                            cardDetailedText: '2.5rem',
+                          }}
+                        theme = {{
+                            primary: '#22223B',
+                            secondary: '#C9ADA7',
+                            cardForeColor: '#22223B',
+                            titleColor: '#22223B',
+                            titleColorActive: '#22223B',
+                            cardBgColor: '#F2E9E4',
+                        }}
+                    />
+                </div>
+            </div>
+            <Loader type = 'pacman'/>
         </>
     )
 
