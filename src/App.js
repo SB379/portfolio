@@ -5,9 +5,6 @@ import Home from './components/Home'
 import About from './components/About'
 import Contact from './components/Contact';
 import Projects from './components/Projects';
-import Wordle from './components/Wordle';
-import Projection from './components/Projection';
-import OneLife from './components/OneLife';
 
 function App() {
   return (
