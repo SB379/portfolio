@@ -1,6 +1,6 @@
 import './index.scss';
 // import Loader from 'react-loaders';
-import { useState, useEffect, useCallback } from 'react';
+import { useEffect, useCallback } from 'react';
 // import AnimatedLetters from '../AnimatedLetters';
 import Projection from "../../assets/images/projection.png"
 import Wordle from "../../assets/images/wordle.png"
