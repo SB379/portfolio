@@ -13,11 +13,11 @@ const Projects = () => {
     // const [letterClass, setLetterClass] = useState('text-animate')
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
-    useEffect(() => {
-        setTimeout(() => {
-            setLetterClass('text-animate-hover')
-        }, 3000)
-    })
+    // useEffect(() => {
+    //     setTimeout(() => {
+    //         setLetterClass('text-animate-hover')
+    //     }, 3000)
+    // })
 
     useEffect(() => {
         if (emblaApi) {
