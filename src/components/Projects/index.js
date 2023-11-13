@@ -1,7 +1,7 @@
 import './index.scss';
-import Loader from 'react-loaders';
+// import Loader from 'react-loaders';
 import { useState, useEffect, useCallback } from 'react';
-import AnimatedLetters from '../AnimatedLetters';
+// import AnimatedLetters from '../AnimatedLetters';
 import Projection from "../../assets/images/projection.png"
 import Wordle from "../../assets/images/wordle.png"
 import TheClub from "../../assets/images/theclub.jpg"
@@ -10,7 +10,7 @@ import useEmblaCarousel from 'embla-carousel-react'
 
 const Projects = () => {
     
-    const [letterClass, setLetterClass] = useState('text-animate')
+    // const [letterClass, setLetterClass] = useState('text-animate')
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true })
 
     useEffect(() => {
