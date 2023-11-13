@@ -1,14 +1,11 @@
-import { Link } from 'react-router-dom';
 import './index.scss';
 import {useState} from 'react';
 import AnimatedLetters from '../AnimatedLetters';
-import Loader from 'react-loaders';
 import { useEffect } from 'react';
-import Headshot from "../../assets/images/headshot.jpg";
 
 const Home = () => {
     const [letterClass, setLetterClass] = useState('text-animate')
-    const nameArray = ['', 'S', 'i', 'd', 'd', 'h', 'a', 'r', 't', 'h']
+    // const nameArray = ['', 'S', 'i', 'd', 'd', 'h', 'a', 'r', 't', 'h']
     const textArray = ['t', 'u', 'r', 'n', 'i', 'n', 'g', ' ', 'i', 'd', 'e', 'a', 's', ' ', 'i', 'n', 't', 'o', ' ', 'r', 'e', 'a', 'l', ' ', 'l', 'i', 'f', 'e', ' ', 'p', 'r', 'o', 'd', 'u', 'c', 't', 's']
 
     
