@@ -66,7 +66,7 @@ const Home = () => {
                     {/* <p class = "text-white text-2xl md:text-[36px] pt-8 animate">is my purpose</p> */}
                 </div>
                 <div class = "md:w-1/2 w-full h-1/5 flex flex-row justify-end items-start pr-20">
-                    <p class = "text-white text-2xl bg-gray-900 border border-gray-500 shadow-2xl rounded-full h-20 w-1/2 md:w-1/4 flex items-center justify-center hover:text-black hover:bg-[#F4F4FF]">Recent Projects</p>
+                    <button onClick={() => {window.location.href = 'https://siddharthbalaji.tech/projects'}} class = "text-white text-2xl bg-gray-900 border border-gray-500 shadow-2xl rounded-full h-20 w-1/2 md:w-1/4 flex items-center justify-center hover:text-black hover:bg-[#F4F4FF]">Recent Projects</button>
                 </div>
             </div>
         </>
